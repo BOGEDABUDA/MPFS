@@ -1,0 +1,266 @@
+[
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_inode.o",
+            "ctfs_inode.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_inode.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O0",
+            "-g",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-o",
+            "../bld/fstest.o",
+            "fstest.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs/test",
+        "file": "fstest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_runtime.o",
+            "ctfs_runtime.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_runtime.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_bitmap.o",
+            "ctfs_bitmap.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_bitmap.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-g",
+            "-mclwb",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_cpy.o",
+            "ctfs_cpy.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_cpy.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O0",
+            "-g",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-o",
+            "../bld/mpfs_fstest.o",
+            "mpfs_fstest.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs/test",
+        "file": "mpfs_fstest.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "bld/ctfs.a",
+            "bld/ffile.o",
+            "-o",
+            "bld/libctfs.so",
+            "ctfs_wrapper.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_wrapper.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_pgg.o",
+            "ctfs_pgg.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_pgg.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_func2.o",
+            "ctfs_func2.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_func2.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "bld/ctfs.a",
+            "-o",
+            "mpfs_test",
+            "mpfs_test.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "mpfs_test.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/mpfs_parse.o",
+            "mpfs_parse.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "mpfs_parse.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O0",
+            "-g",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-o",
+            "../bld/mkfs.o",
+            "mkfs.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs/test",
+        "file": "mkfs.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/lib_dax.o",
+            "lib_dax.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "lib_dax.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-Wall",
+            "-fPIC",
+            "-O3",
+            "-o",
+            "../bld/ffile.o",
+            "ffile.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs/glibc",
+        "file": "ffile.c"
+    },
+    {
+        "arguments": [
+            "gcc",
+            "-c",
+            "-O3",
+            "-fPIC",
+            "-mclwb",
+            "-mclflushopt",
+            "-Wall",
+            "-pthread",
+            "-mavx512f",
+            "-o",
+            "bld/ctfs_func.o",
+            "ctfs_func.c"
+        ],
+        "directory": "/home/dingbo/Desktop/ctFS_qemu_ctfs",
+        "file": "ctfs_func.c"
+    }
+]

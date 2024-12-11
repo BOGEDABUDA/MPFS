@@ -1,0 +1,27 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/dingbo/ctFS_qemu'
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_bitmap.c -o bld/ctfs_bitmap.o
+ 
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_func.c -o bld/ctfs_func.o
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_inode.c -o bld/ctfs_inode.o
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_pgg.c -o bld/ctfs_pgg.o
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_runtime.c -o bld/ctfs_runtime.o
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  lib_dax.c -o bld/lib_dax.o
+gcc -c ctfs_cpy.c -g -mclwb -Wall -pthread -mavx512f -o bld/ctfs_cpy.o
+gcc -c -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  ctfs_func2.c -o bld/ctfs_func2.o
+ar cru bld/ctfs.a bld/ctfs_bitmap.o bld/ctfs_func.o bld/ctfs_inode.o bld/ctfs_pgg.o bld/ctfs_runtime.o bld/lib_dax.o bld/ctfs_cpy.o bld/ctfs_func2.o
+ 
+cd glibc && make
+ 
+make[1]: Entering directory '/home/dingbo/ctFS_qemu/glibc'
+gcc -Wall -fPIC -O3 -c  ffile.c -o ../bld/ffile.o
+ 
+# gcc -Wall -fPIC -shared -o ffile.so ffile.o -ldl
+# gcc -Wall -fPIC -shared -g -o ../ffile.so fileops.c genops.c ffile.c
+make[1]: Leaving directory '/home/dingbo/ctFS_qemu/glibc'
+ 
+gcc -shared -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  -o bld/libctfs.so ctfs_wrapper.c bld/ctfs.a bld/ffile.o -ldl
+ 
+gcc -O0 -g -fPIC -mclwb -mclflushopt -Wall -pthread -mavx512f  mpfs_main_task.c bld/ctfs.a -o main_task
+make: Leaving directory '/home/dingbo/ctFS_qemu'
+ 

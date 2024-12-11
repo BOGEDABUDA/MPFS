@@ -1,0 +1,26 @@
+ctFS_mkfs: reseting dax...
+MPFS page table sharing!
+MPFS shared lock inited
+Address of rwlock in Process 16020: 0x7d8020000140 - 0
+Process 16020 lock 0x7d8020000140 : 0
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+The futex facility returned an unexpected error code.
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+Aborted (core dumped)
+all files are prepared
+Time taken: 241597618 nanoseconds
+Time taken in seconds: .241597618

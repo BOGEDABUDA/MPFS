@@ -1,0 +1,13 @@
+[global]
+directory=/mnt/MPFS
+filename=test
+ioengine=sync
+rw=read
+
+filesize=128m
+bs=4k
+thread=1
+runtime=10
+time_based=1
+
+[job0]

@@ -1,0 +1,1 @@
+scp -P 6002 -r  /home/dingbo/Desktop/ctFS_qemu dingbo@127.0.0.1:~/ 

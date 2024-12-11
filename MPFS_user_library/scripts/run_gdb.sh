@@ -1,0 +1,1 @@
+sudo gdb /usr/src/linux-5.7/vmlinux
